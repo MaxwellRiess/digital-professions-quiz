@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   {
     question: "What motivates you the most in your work?",
     answers: [
-      { text: "Personal achievement and growth", label: "Developer", score: 1 },
+      { text: "Personal achievement and growth", label: "A", score: 1 },
       { text: "Making a difference in the world", label: "B", score: 1 },
       { text: "Financial rewards and stability", label: "C", score: 1 },
       { text: "Recognition and praise from others", label: "D", score: 1 },
