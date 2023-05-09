@@ -1,36 +1,90 @@
 document.addEventListener("DOMContentLoaded", () => {
   const quizData = [
   {
-    question: "Which of the following activities do you enjoy the most?",
-    answers: [
-      { text: "Solving puzzles", label: "A", score: 1 },
-      { text: "Drawing or designing", label: "B", score: 1 },
-      { text: "Writing stories or articles", label: "C", score: 1 },
-      { text: "Analyzing data or trends", label: "D", score: 1 },
-      { text: "Playing video games", label: "E", score: 1 },
-    ],
-  },
-
-  {
     question: "If you were stranded on a desert island, how would you help the group survive??",
     answers: [
-      { text: "Look for food", label: "A", score: 1 },
-      { text: "Build a stable shelter", label: "B", score: 1 },
-      { text: "Keep everyones marale up", label: "C", score: 1 },
-      { text: "Help eveyone work together", label: "D", score: 1 },
-      { text: "Go it alone", label: "E", score: 1 },
-      { text: "Pet skills", label: "E", score: 1 },
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
     ],
   },
 
   {
-    question: "What motivates you the most in your work?",
+    question: "Let's play a classic game, what are we playing?",
     answers: [
-      { text: "Personal achievement and growth", label: "A", score: 1 },
-      { text: "Making a difference in the world", label: "B", score: 1 },
-      { text: "Financial rewards and stability", label: "C", score: 1 },
-      { text: "Recognition and praise from others", label: "D", score: 1 },
-      { text: "Destroying my enemies", label: "E", score: 5 },
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "You need to learn something about something new, where to you go first ",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "You wake up tomorrow with a new superpower. What is it?",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "I place a large shiny black box on the table, it is making a faint ticking sound and shaking slightly, what do you do?",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "Which famous innovator do you admire the most?",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "If you were to start a club at school, what would it be about?",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "Which cartoon character do you relate to the most?",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "Designer", score: 1 },
+      { text: "C", label: "DeliveryManager", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "PerformanceAnalyst", score: 1 },
     ],
   },
   // Add more questions and answers here
@@ -38,22 +92,24 @@ document.addEventListener("DOMContentLoaded", () => {
 ];
 
   const resultDescriptions = {
-  A: "You would excel as a Web Developer. You have a knack for coding and enjoy creating beautiful and functional websites.",
-  B: "You're a natural fit for a career in Data Science. Your analytical and problem-solving skills would shine in this field.",
-  C: "A career as a UX/UI Designer would suit you well. You have a great eye for design and user experiences.",
-  D: "You would thrive in the world of Cybersecurity. Your attention to detail and passion for keeping data secure make you an ideal candidate.",
-  E: "A role in Project Management would be perfect for you. Your ability to plan, organize, and lead teams is valuable in the digital sector.",
+  Developer: "You would excel as a Web Developer. You have a knack for coding and enjoy creating beautiful and functional websites.",
+  DeliveryManager: "You would be a great delivery manager, your stong organisation and ability to motivate others make you perfect for a role that all about teamwork",
+  Designer: "A career as a UX/UI Designer would suit you well. You have a great eye for design and user experiences.",
+  UserResearcher: "You'd be a great User Researcher! You are great at searching for answer to the most important questions and spreading empathy throughout the team",
+  ProductManager: "A role in Project Management would be perfect for you. Your ability to plan, organize, and lead teams is valuable in the digital sector.",
+  PerformanceAnalyst: "Your analytical and problem-solving skills would shine in this field.",
 };
 
   let currentQuestion = 0;
   let selectedAnswers = [];
 
   const userScores = {
-    A: 0,
-    B: 0,
-    C: 0,
-    D: 0,
-    E: 0,
+    Developer: 0,
+    DeliveryManager: 0,
+    Designer: 0,
+    UserResearcher: 0,
+    ProductManager: 0,
+    PerformanceAnalyst: 0,
   };
 
   const quizContainer = document.getElementById("quiz-container");
@@ -148,11 +204,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const restartButton = document.getElementById("restart-button");
     restartButton.addEventListener("click", () => {
       currentQuestion = 0;
-      userScores.A = 0;
-      userScores.B = 0;
-      userScores.C = 0;
-      userScores.D = 0;
-      userScores.E = 0;
+      userScores.Developer = 0;
+      userScores.DeliveryManager = 0;
+      userScores.Designer = 0;
+      userScores.UserResearcher = 0;
+      userScores.ProductManager = 0;
+      userScores.PerformanceAnalyst = 0;
       resultDiv.classList.add("hidden");
       quizContainer.classList.remove("hidden");
       loadQuiz();
