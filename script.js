@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const quizData = [
   {
-    question: "If you were stranded on a desert island, how would you help the group survive??",
+    question: "If you were stranded on a desert island, how would you help the group survive?",
     answers: [
       { text: "A", label: "Developer", score: 1 },
       { text: "B", label: "Designer", score: 1 },
@@ -16,42 +16,42 @@ document.addEventListener("DOMContentLoaded", () => {
     answers: [
       { text: "A", label: "Developer", score: 1 },
       { text: "B", label: "Designer", score: 1 },
-      { text: "C", label: "DeliveryManager", score: 1 },
-      { text: "D", label: "ProductManager", score: 1 },
+      { text: "C", label: "ProductManager", score: 1 },
+      { text: "D", label: "DeliveryManager", score: 1 },
       { text: "E", label: "PerformanceAnalyst", score: 1 },
     ],
   },
 
   {
-    question: "You need to learn something about something new, where to you go first ",
+    question: "You need to learn something about something new, where to you go first?",
     answers: [
       { text: "A", label: "Developer", score: 1 },
-      { text: "B", label: "Designer", score: 1 },
-      { text: "C", label: "DeliveryManager", score: 1 },
-      { text: "D", label: "ProductManager", score: 1 },
-      { text: "E", label: "PerformanceAnalyst", score: 1 },
+      { text: "B", label: "ProductManager", score: 1 },
+      { text: "C", label: "Designer", score: 1 },
+      { text: "D", label: "UserResearcher", score: 1 },
+      { text: "E", label: "ProductManager", score: 1 },
     ],
   },
 
   {
     question: "You wake up tomorrow with a new superpower. What is it?",
     answers: [
-      { text: "A", label: "Developer", score: 1 },
-      { text: "B", label: "Designer", score: 1 },
-      { text: "C", label: "DeliveryManager", score: 1 },
-      { text: "D", label: "ProductManager", score: 1 },
-      { text: "E", label: "PerformanceAnalyst", score: 1 },
+      { text: "A", label: "UserResearcher", score: 1 },
+      { text: "B", label: "DeliveryManager", score: 1 },
+      { text: "C", label: "Designer", score: 1 },
+      { text: "D", label: "PerformanceAnalyst", score: 1 },
+      { text: "E", label: "Developer", score: 1 },
     ],
   },
 
   {
     question: "I place a large shiny black box on the table, it is making a faint ticking sound and shaking slightly, what do you do?",
     answers: [
-      { text: "A", label: "Developer", score: 1 },
+      { text: "A", label: "UserResearcher", score: 1 },
       { text: "B", label: "Designer", score: 1 },
-      { text: "C", label: "DeliveryManager", score: 1 },
-      { text: "D", label: "ProductManager", score: 1 },
-      { text: "E", label: "PerformanceAnalyst", score: 1 },
+      { text: "C", label: "PerformanceAnalyst", score: 1 },
+      { text: "D", label: "DeliveryManager", score: 1 },
+      { text: "E", label: "ProductManager", score: 1 },
     ],
   },
 
@@ -59,21 +59,21 @@ document.addEventListener("DOMContentLoaded", () => {
     question: "Which famous innovator do you admire the most?",
     answers: [
       { text: "A", label: "Developer", score: 1 },
-      { text: "B", label: "Designer", score: 1 },
-      { text: "C", label: "DeliveryManager", score: 1 },
-      { text: "D", label: "ProductManager", score: 1 },
-      { text: "E", label: "PerformanceAnalyst", score: 1 },
+      { text: "B", label: "ProductManager", score: 1 },
+      { text: "C", label: "PerformanceAnalyst", score: 1 },
+      { text: "D", label: "UserResearcher", score: 1 },
+      { text: "E", label: "Designer", score: 1 },
     ],
   },
 
   {
     question: "If you were to start a club at school, what would it be about?",
     answers: [
-      { text: "A", label: "Developer", score: 1 },
-      { text: "B", label: "Designer", score: 1 },
+      { text: "A", label: "Designer", score: 1 },
+      { text: "B", label: "UserResearcher", score: 1 },
       { text: "C", label: "DeliveryManager", score: 1 },
       { text: "D", label: "ProductManager", score: 1 },
-      { text: "E", label: "PerformanceAnalyst", score: 1 },
+      { text: "E", label: "Developer", score: 1 },
     ],
   },
 
@@ -81,10 +81,32 @@ document.addEventListener("DOMContentLoaded", () => {
     question: "Which cartoon character do you relate to the most?",
     answers: [
       { text: "A", label: "Developer", score: 1 },
-      { text: "B", label: "Designer", score: 1 },
-      { text: "C", label: "DeliveryManager", score: 1 },
-      { text: "D", label: "ProductManager", score: 1 },
+      { text: "B", label: "DeliveryManager", score: 1 },
+      { text: "C", label: "ProductManager", score: 1 },
+      { text: "D", label: "UserResearcher", score: 1 },
       { text: "E", label: "PerformanceAnalyst", score: 1 },
+    ],
+  },
+
+  {
+    question: "If things are feeling a bit stressful, how might you destress?",
+    answers: [
+      { text: "A", label: "Developer", score: 1 },
+      { text: "B", label: "UserResearcher", score: 1 },
+      { text: "C", label: "ProductManager", score: 1 },
+      { text: "D", label: "DeliveryManager", score: 1 },
+      { text: "E", label: "Designer", score: 1 },
+    ],
+  },
+
+  {
+    question: "I think of myself as a great…",
+    answers: [
+      { text: "A", label: "UserResearcher", score: 1 },
+      { text: "B", label: "DeliveryManager", score: 1 },
+      { text: "C", label: "Developer", score: 1 },
+      { text: "D", label: "ProductManager", score: 1 },
+      { text: "E", label: "Designer", score: 1 },
     ],
   },
   // Add more questions and answers here
@@ -92,11 +114,11 @@ document.addEventListener("DOMContentLoaded", () => {
 ];
 
   const resultDescriptions = {
-  Developer: "You would excel as a Web Developer. You have a knack for coding and enjoy creating beautiful and functional websites.",
+  Developer: "You would excel as a Web Developer. You have a knack for problem solving and a facination with how things work, this are great skills to ahve when making tech products and services.",
   DeliveryManager: "You would be a great delivery manager, your stong organisation and ability to motivate others make you perfect for a role that all about teamwork",
-  Designer: "A career as a UX/UI Designer would suit you well. You have a great eye for design and user experiences.",
-  UserResearcher: "You'd be a great User Researcher! You are great at searching for answer to the most important questions and spreading empathy throughout the team",
-  ProductManager: "A role in Project Management would be perfect for you. Your ability to plan, organize, and lead teams is valuable in the digital sector.",
+  Designer: "You'd be an amazing UX/UI Designer. You have both a creative and also critical eye for design which you could use to make awsome user experiences.",
+  UserResearcher: "You'd be a great User Researcher! You love searching for answer to the most important questions would be great at spreading empathy throughout the team",
+  ProductManager: "A role in Project Management would be perfect for you. Your ability to plan, organize, and lead teams is valuable in creating great services and products.",
   PerformanceAnalyst: "Your analytical and problem-solving skills would shine in this field.",
 };
 
